@@ -257,6 +257,7 @@
           .then(function (response) {
             console.log(response.data);
             //  跳转到分期付款页面
+            location.href = '/installments/' + response.data.id;
           })
       });
 
